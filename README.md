@@ -1,2 +1,2 @@
 # PYTHON
-In this repo, I will document my journey with Python.
+In this repo, I will document my coding journey with Python.
