@@ -1,22 +1,29 @@
-values = [10,20,30,40,50]
+import numpy as np
+
 
 def normalize(values):
-    if not values:
-        return []
+    values = np.asarray(values, dtype=float)
 
-    minimum_value = min(values)
-    maximum_value = max(values)
+    if values.size == 0:
+        return np.array([], dtype=float)
+
+    minimum_value = values.min()
+    maximum_value = values.max()
 
     if minimum_value == maximum_value:
-        return [0.0 for value in values]
-    normalized_value = []
+        return np.zeros_like(values)
 
-    for value in values:
-        tmp = (
-            (value - minimum_value) / (maximum_value - minimum_value)
-        )
-        normalized_value.append(tmp)
-    return normalized_value
+    normalized_values = (
+        (values - minimum_value)
+        / (maximum_value - minimum_value)
+    )
+
+    return normalized_values
+
+
+values = np.array([10, 20, 30, 40, 50])
 
 result = normalize(values)
-print(result)
+
+print("Original values:", values)
+print("Normalized values:", result)
