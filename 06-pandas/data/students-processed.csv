@@ -1,0 +1,9 @@
+name,class_name,math,english,science,average,status,grade,teacher,room
+An,A,8.0,7.0,9.0,8.0,passed,B,Mr. Kim,101
+Binh,A,6.0,5.5,7.0,6.17,passed,C,Mr. Kim,101
+Chi,B,9.5,9.0,8.5,9.0,passed,A,Ms. Lee,102
+Dung,B,4.0,5.0,4.5,4.5,failed,F,Ms. Lee,102
+Hoa,A,7.5,8.0,7.0,7.5,passed,B,Mr. Kim,101
+Minh,B,8.5,6.5,8.0,7.67,passed,B,Ms. Lee,102
+Lan,A,5.5,7.5,6.0,6.33,passed,C,Mr. Kim,101
+Nam,B,7.0,6.0,7.5,6.83,passed,C,Ms. Lee,102
